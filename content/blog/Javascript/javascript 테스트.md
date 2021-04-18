@@ -1,7 +1,7 @@
 ---
-title: 'Category Test2'
+title: 'javascript 테스트'
 date: 2020-07-02 16:21:13
-category: 'Java'
+category: 'Javascript'
 draft: false
 ---
 

@@ -1,4 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SuperPil]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://pygmalion0909.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Apr 2021 04:02:01 GMT</lastBuildDate><item><title><![CDATA[input에 아이콘 넣기]]></title><description><![CDATA[최종결과  HTML CSS 👉 background-image: url(list.png) 배경 이미지로 아이콘 이미지를 넣는다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SuperPil]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://pygmalion0909.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Apr 2021 11:49:52 GMT</lastBuildDate><item><title><![CDATA[Overloading - 오버로딩]]></title><description><![CDATA[Overload의 사전적 의미는 “초과 적재”, “과부하”이다. 전혀 느낌이 오지 않는다. 무엇을 쌓는다는 건가?! 
+Overloading을 한마디로 정의하자면! 할 수 없다. 어휘력 부족…😿 
+그러니까. 그. 뭐냐. Um… Java에 class…]]></description><link>https://pygmalion0909.github.io/Java/Overloading/</link><guid isPermaLink="false">https://pygmalion0909.github.io/Java/Overloading/</guid><pubDate>Sun, 25 Apr 2021 13:15:00 GMT</pubDate><content:encoded>&lt;p&gt;Overload의 사전적 의미는 “초과 적재”, “과부하”이다.&lt;br&gt;
+전혀 느낌이 오지 않는다. 무엇을 쌓는다는 건가?!&lt;br&gt;
+&lt;br&gt;
+Overloading을 한마디로 정의하자면!&lt;br&gt;
+할 수 없다. 어휘력 부족…😿&lt;br&gt;
+&lt;br&gt;
+그러니까. 그. 뭐냐. Um… Java에 class가 있다.
+class에 메소드를 만드는데 메소드 이름을 중복으로 여러 개 만든다.&lt;br&gt;
+원래 메소드 이름이 중복되면 에러가 발생하지만 약간의 규칙을 준수하여 만들면 에러가 발생하지 않고 만들 수 있다. 이것을 Overloading이라 한다.&lt;br&gt;
+&lt;br&gt;
+여기서 의문이 든다.&lt;br&gt;
+왜 같은 이름의 메소드를 굳이! 여러 개 만들까?!&lt;/p&gt;
+&lt;h2 id=&quot;overloading-예제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#overloading-%EC%98%88%EC%A0%9C&quot; aria-label=&quot;overloading 예제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overloading 예제&lt;/h2&gt;
+&lt;p&gt;Overloading에는 메소드 Overloading, 생성자 Overloading 2가지가 있다.&lt;br&gt;
+먼제 메소드 Overloading부터 보자.&lt;/p&gt;
+&lt;h3 id=&quot;메소드-overloading&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A9%94%EC%86%8C%EB%93%9C-overloading&quot; aria-label=&quot;메소드 overloading permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;메소드 Overloading&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Overloading&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sumMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sumMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;OverloadingMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;OverloadingMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;UseMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; resultA &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;OverloadingMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; resultB &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;OverloadingMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; resultC &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;OverloadingMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; resultD &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;OverloadingMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1.6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;===resultA===&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; resultA&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//3&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;===resultB===&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; resultB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//6&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;===resultC===&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; resultC&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//2.6&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;===resultD===&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; resultD&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//2.6&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;👉 public class Overloading { .. }&lt;/strong&gt;&lt;br&gt;
+Overloading class를 만들었다. class내부에 sum 하는 기능을 가진 메소드를 만들어 보자.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👉 public int sumMethod(int a, int b) { .. }&lt;/strong&gt;&lt;br&gt;
+첫 번째 메소드는 int타입 a, b를 받아 덧셈하는 기능이다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👉 public int sumMethod(int a, int b, int c) { .. }&lt;/strong&gt;&lt;br&gt;
+두 번째 메소드는 int타입 3개를 받아 덧셈하는 기능이다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👉 public int sumMethod(int a, double b) { .. }&lt;/strong&gt;&lt;br&gt;
+세 번째 메소드는 int, double타입 각각 한 개씩 받아 덧셈하는 기능이다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👉 public int sumMethod(double a, int b) { .. }&lt;/strong&gt;&lt;br&gt;
+네 번째 메소드는 세 번째 메소드의 파라미터 순서만 바꿨다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👉 public void UseMethod() { .. }&lt;/strong&gt;&lt;br&gt;
+위에서 만든 3개의 메소드들의 호출하여 실제로 사용하는 메소드다.  &lt;/p&gt;
+&lt;p&gt;위 코드를 살짝만! 봐도 4개의 메소드의 공통점과 차이점을 쉽게 파악할 수 있다.&lt;br&gt;
+공통점은 덧셈하는 기능이다.&lt;br&gt;
+차이점은 덧셈의 개수 또는 타입, 순서가 다르다.
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Overloading은 같은 기능을 가진 메소드들을 이름으로 분리하지 않고 파라미터 타입, 개수, 순서로 구분 지어 사용할 수 있게 한다. 만약, Overloading을 하지 않는다면 어떻게 될까?&lt;br&gt;
+Overloading을 하지 않을 경우 아래 코드와 같이 이름으로 구분 지어야 한다.&lt;br&gt;
+sumMethodTwoInt, sumMethodThreeInt, sumMethodString…&lt;br&gt;
+만약, 동일한 기능에 다른 타입의 메소드가 더 필요하다면?!  &lt;/p&gt;
+&lt;h3 id=&quot;생성자-overloading&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%9D%EC%84%B1%EC%9E%90-overloading&quot; aria-label=&quot;생성자 overloading permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;생성자 Overloading&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;#drop_the_text input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #343a40&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;list.png&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 5px center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding-left&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 40px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid #2e3238&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 30px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; border-box&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;outline&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; none&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 3px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;👉 &lt;strong&gt;background-image: url(list.png)&lt;/strong&gt;&lt;br&gt;
+배경 이미지로 아이콘 이미지를 넣는다.
+&lt;br/&gt;
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;strong&gt;background-repeat: no-repeat&lt;/strong&gt;&lt;br&gt;
+이미지가 작아서 반복이 된다. no-repeat을 사용하여 반복 없이 이미지 한 개만 나오게 한다.
+&lt;br/&gt;
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;strong&gt;background-position: 5px center&lt;/strong&gt;&lt;br&gt;
+input영역 안에서 이미지를 원하는 위치를 정한다. 5px은 x축 위치 값, center은 y축 위치값
+단위는 px, %, top, center, left, right 가 있다.
+&lt;br/&gt;
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;strong&gt;padding-left: 40px&lt;/strong&gt;&lt;br&gt;
+padding값이 없으면 HTML에서 설정한 placeholder=“Add List”와 겹쳐진다. 그래서 padding값을 줘서 겹침 현상을 없앤다. input을 클릭했을 때 padding값만큼
+&lt;br/&gt;
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;strong&gt;box-sizing: border-box&lt;/strong&gt;&lt;br&gt;
+inputd에 width: 100% 가 있어서 box-sizing코드가 없으면 input의 넓이가 부모 넓이보다 넘는 현상이 발생한다.&lt;br&gt;
+box-sizing: border-box을 사용하여 input 넓이를 부모 넓이와 같게 한다. input의 width를 부모보다 작게 줄 경우 box-sizi코드는 필요 없다.
+&lt;br/&gt;
+&lt;br/&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[input에 아이콘 넣기]]></title><description><![CDATA[최종결과  HTML CSS 👉 background-image: url(list.png) 배경 이미지로 아이콘 이미지를 넣는다.
 
  👉 background-repeat: no-repeat 이미지가 작아서 반복이 된다. no-repeat…]]></description><link>https://pygmalion0909.github.io/Css/input에 아이콘 넣기/</link><guid isPermaLink="false">https://pygmalion0909.github.io/Css/input에 아이콘 넣기/</guid><pubDate>Sun, 25 Apr 2021 12:37:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;최종결과&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;최종결과 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;최종결과&lt;/h3&gt;
 &lt;p&gt;&lt;span

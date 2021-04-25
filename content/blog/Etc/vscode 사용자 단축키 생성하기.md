@@ -62,7 +62,7 @@ draft: false
   }
 ```
 1. 이모티콘도 단축키로 설정 가능하다.
-1. 혹시 `markdown`에 단축키를 설정하면 단축키를 작성하고 `ctrl + space`를 눌려야 단축키가 나타난다.
+1. 혹시 `markdown`에 단축키를 설정하고 사용할때는 단축키를 작성하고 `ctrl + space`를 눌려야 설정한 단축키가 나타난다.
 
 ### 참고자료
 1. [vscode 단축키 추가하기](https://soraji.github.io/js/2020/02/12/VSCconsolelog/) 
